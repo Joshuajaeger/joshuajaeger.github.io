@@ -3,18 +3,32 @@
  ******************************************************************************/
  
 :root {
-  --global-bg-color: #{$white-color};
+  /* Typography */
+  --font-sans: "Spline Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Literata", ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+
+  /* Surfaces */
+  --global-bg-color: #fbfbf8;
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$black-color};
-  --global-hover-color: #{$black-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
+  --global-theme-color: #0a5c5b;
+  --global-hover-color: #074746;
+  --global-footer-bg-color: #0f1416;
+  --global-footer-text-color: rgba(255,255,255,.74);
+  --global-footer-link-color: rgba(255,255,255,.90);
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
+
+  /* Effects */
+  --global-surface-1: rgba(255,255,255,.72);
+  --global-border-color: rgba(0,0,0,.08);
+  --global-shadow: 0 18px 40px rgba(0,0,0,.08);
+  --global-shadow-hover: 0 26px 60px rgba(0,0,0,.14);
+  --global-radius: 14px;
+  --global-radius-sm: 10px;
+  --global-focus-ring: 0 0 0 4px rgba(10, 92, 91, .18);
 
   .fa-sun {
     display : none;
@@ -27,18 +41,24 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #0d1114;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$black-color};
-  --global-hover-color: #{$black-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-text-color: rgba(255,255,255,.86);
+  --global-text-color-light: rgba(255,255,255,.66);
+  --global-theme-color: #7bd3c6;
+  --global-hover-color: #a9f0e6;
+  --global-footer-bg-color: rgba(255,255,255,.06);
+  --global-footer-text-color: rgba(255,255,255,.74);
+  --global-footer-link-color: rgba(255,255,255,.92);
+  --global-distill-app-color: rgba(255,255,255,.72);
+  --global-divider-color: rgba(255,255,255,.12);
+  --global-card-bg-color: rgba(255,255,255,.04);
+
+  --global-surface-1: rgba(255,255,255,.06);
+  --global-border-color: rgba(255,255,255,.12);
+  --global-shadow: 0 20px 48px rgba(0,0,0,.55);
+  --global-shadow-hover: 0 26px 70px rgba(0,0,0,.66);
+  --global-focus-ring: 0 0 0 4px rgba(123, 211, 198, .18);
 
   .fa-sun {
     padding-left: 10px;

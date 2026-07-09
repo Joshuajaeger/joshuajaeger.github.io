@@ -1,14 +1,13 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Things I do and love.
+description: Things I do and love—I enjoy creating noise and differentiating key signals from noise.
 nav: true
-nav_order: 3
-display_categories: [research]
+nav_order: 1
+display_categories: [Signal, Noise]
 horizontal: false
 ---
-
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
